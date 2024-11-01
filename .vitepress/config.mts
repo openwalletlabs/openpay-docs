@@ -2,6 +2,7 @@ import { defineConfig, type DefaultTheme } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: "/openpay-docs/",
   title: "OpenPay",
   description: "openpay sdk docs",
   head: [

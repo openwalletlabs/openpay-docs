@@ -92,7 +92,6 @@
 
 | 字段名  | 类型   | 说明   |
 | ------- | ------ | ------ |
-| type    | int    | 类型   |
 | gas     | string | Gas    |
 | gas_fee | string | Gas 费 |
 
