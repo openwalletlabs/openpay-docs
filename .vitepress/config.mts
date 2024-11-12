@@ -6,7 +6,7 @@ export default defineConfig({
   title: "OpenPay",
   description: "openpay sdk docs",
   head: [
-    ["link", { rel: "icon", href: "/logo.png" }],
+    ["link", { rel: "icon", href: "/openpay-docs/logo.png" }],
     ["link", { rel: "preconnect", href: "https://fonts.googleapis.com" }],
     [
       "link",
@@ -107,8 +107,35 @@ function sidebarClient(): DefaultTheme.SidebarItem[] {
       text: "listeners",
       collapsed: false,
       items: [
-        { text: "tokenListener", link: "listener/tokenListener" },
+        { text: "TokenListener", link: "listener/tokenListener" },
+        { text: "ConnListener", link: "listener/connListener" },
         { text: "setTokenListener", link: "listener/setTokenListener" },
+      ],
+    },
+    {
+      text: "callbacks",
+      collapsed: true,
+      items: [
+        {
+          text: "OnBalanceUpdated",
+          link: "listener/callback/onBalanceUpdated",
+        },
+        {
+          text: "OnUSDBalanceUpdated",
+          link: "listener/callback/onUSDBalanceUpdated",
+        },
+        {
+          text: "OnConnecting",
+          link: "listener/callback/onConnecting",
+        },
+        {
+          text: "OnConnectSuccess",
+          link: "listener/callback/onConnectSuccess",
+        },
+        {
+          text: "OnConnectFailed",
+          link: "listener/callback/onConnectFailed",
+        },
       ],
     },
     {

@@ -1,4 +1,4 @@
-# onUSDBalanceUpdated
+# OnUSDBalanceUpdated
 
 ## 功能介绍
 
@@ -9,7 +9,7 @@
 ### 返回原型
 
 ```go showLineNumbers
- func onUSDBalanceUpdated(tokenInfo string)
+ func OnUSDBalanceUpdated(tokenInfo string)
 ```
 
 ### 返回结果
