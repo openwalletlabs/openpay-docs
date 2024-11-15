@@ -8,7 +8,7 @@
 | ws_addr                                   | string | 服务端 ws 地址         |
 | [platform_id](/common/enum.md#platformid) | int32  | 平台 ID                |
 | data_dir                                  | string | 数据目录               |
-| [log_level](/common/enum.md#loglevel)    | uint32 | 日志级别               |
+| [log_level](/common/enum.md#loglevel)     | uint32 | 日志级别               |
 | is_log_standard_output                    | bool   | 是否日志输出到标准输出 |
 | log_file_path                             | string | 日志文件路径           |
 
@@ -38,16 +38,18 @@
 
 > Token 信息
 
-| 字段名            | 类型   | 说明                                |
-| ----------------- | ------ | ----------------------------------- |
-| wallet_type       | string | [链类型](/common/enum.md#chaintype) |
-| name              | string | 名称                                |
-| symbol            | string | 符号                                |
-| icon              | string | 图标                                |
-| decimals          | int    | 精度                                |
-| balance           | string | 余额                                |
-| is_multiple_chain | bool   | 是否是多链代币                      |
-| usdt_balance      | string | USDT 余额                           |
+| 字段名                         | 类型   | 说明                                |
+| ------------------------------ | ------ | ----------------------------------- |
+| wallet_type                    | string | [链类型](/common/enum.md#chaintype) |
+| name                           | string | 名称                                |
+| symbol                         | string | 符号                                |
+| icon                           | string | 图标                                |
+| decimals                       | int    | 精度                                |
+| balance                        | string | 余额                                |
+| is_multiple_chain              | bool   | 是否是多链代币                      |
+| usdt_balance                   | string | USDT 余额                           |
+| percent_change_1h              | string | 1 小时涨跌幅                        |
+| usdt_balancepercent_change_24h | string | 24 小时涨跌幅                       |
 
 ## TransferInfo
 
