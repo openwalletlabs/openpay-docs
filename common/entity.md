@@ -38,18 +38,18 @@
 
 > Token 信息
 
-| 字段名                         | 类型   | 说明                                |
-| ------------------------------ | ------ | ----------------------------------- |
-| wallet_type                    | string | [链类型](/common/enum.md#chaintype) |
-| name                           | string | 名称                                |
-| symbol                         | string | 符号                                |
-| icon                           | string | 图标                                |
-| decimals                       | int    | 精度                                |
-| balance                        | string | 余额                                |
-| is_multiple_chain              | bool   | 是否是多链代币                      |
-| usdt_balance                   | string | USDT 余额                           |
-| percent_change_1h              | string | 1 小时涨跌幅                        |
-| usdt_balancepercent_change_24h | string | 24 小时涨跌幅                       |
+| 字段名             | 类型   | 说明                                |
+| ------------------ | ------ | ----------------------------------- |
+| wallet_type        | string | [链类型](/common/enum.md#chaintype) |
+| name               | string | 名称                                |
+| symbol             | string | 符号                                |
+| icon               | string | 图标                                |
+| decimals           | int    | 精度                                |
+| balance            | string | 余额                                |
+| is_multiple_chain  | bool   | 是否是多链代币                      |
+| usdt_balance       | string | USDT 余额                           |
+| percent_change_1h  | string | 1 小时涨跌幅                        |
+| percent_change_24h | string | 24 小时涨跌幅                       |
 
 ## TransferInfo
 
