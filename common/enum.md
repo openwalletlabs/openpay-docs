@@ -1,4 +1,4 @@
-## ChainType
+## WalletType
 
 > 下表包含了 SDK 支持的链类型枚举
 

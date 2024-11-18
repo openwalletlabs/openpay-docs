@@ -75,8 +75,8 @@
 | transaction_index   | int    | 交易索引                               |
 | block_number        | int    | 区块号                                 |
 | block_hash          | string | 区块哈希                               |
-| from_address        | string | 发送钱包地址                           |
-| to_address          | string | 接收钱包地址                           |
+| from_address        | []string | 发送钱包地址                         |
+| to_address          | []string | 接收钱包地址                         |
 | amount              | string | 金额                                   |
 | gas_used            | int    | Gas 使用量                             |
 | gas_price           | string | Gas 价格                               |
