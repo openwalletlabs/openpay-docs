@@ -9,16 +9,23 @@
 ### 函数原型
 
 ```go showLineNumbers
-func GetTransactionReceipt(callback openpay_callback.Base, operationID string, walletType int, hash string)
+func GetTransactionReceipt(callback openpay_callback.Base, operationID string, receiptInput string)
 ```
 
 ### 输入参数
 
-| 参数名称    | 参数类型 | 是否必填 | 描述                                |
-| ----------- | -------- | -------- | ----------------------------------- |
-| operationID | string   | 是       | 请求 UUID                           |
-| walletType  | int      | 是       | [链类型](/common/enum.md#chiantype) |
-| hash        | string   | 是       | 交易 hash                           |
+| 参数名称     | 参数类型 | 是否必填 | 描述             |
+| ------------ | -------- | -------- | ---------------- |
+| operationID  | string   | 是       | 请求 UUID        |
+| receiptInput | Object   | 是       | [ReceiptInput]() |
+
+## ReceiptInput
+
+| 参数名称   | 参数类型 | 是否必填 | 说明                                | 描述 |
+| ---------- | -------- | -------- | ----------------------------------- | ---- |
+| walletType | int      | 是       | [链类型](/common/enum.md#chiantype) |
+| hash       | string   | 是       | 交易 hash                           |
+
 
 ### 返回结果
 
