@@ -41,7 +41,7 @@
 | 字段名             | 类型   | 说明                                 |
 | ------------------ | ------ | ------------------------------------ |
 | wallet_type        | int    | [链类型](/common/enum.md#wallettype) |
-| id                 | string | token id                             |
+| token_id           | string | token id                             |
 | name               | string | 名称                                 |
 | symbol             | string | 符号                                 |
 | icon               | string | 图标                                 |
