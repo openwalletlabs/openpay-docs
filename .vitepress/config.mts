@@ -88,6 +88,7 @@ function sidebarClient(): DefaultTheme.SidebarItem[] {
         { text: "closeSDK", link: "closeSDK" },
         { text: "generateMnemonic", link: "generateMnemonic" },
         { text: "newWalletFromMnemonic", link: "newWalletFromMnemonic" },
+        { text: "signin", link: "signin" },
         { text: "transfer", link: "transfer" },
         {
           text: "getTransactionReceipt",

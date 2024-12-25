@@ -26,3 +26,4 @@ outline: deep
 | [getTokenBalance](/client/getTokenBalance.md)             | 获取 token 余额   |
 | [getEstimatedGas](/client/getEstimatedGas.md)             | 预估 gas          |
 | [setTokenListener](/client/listener/setTokenListener.md)  | 设置 token 监听器 |
+| [signin](/client/signin.md)                               | 登录              |

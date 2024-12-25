@@ -41,6 +41,7 @@
 | 字段名             | 类型   | 说明                                 |
 | ------------------ | ------ | ------------------------------------ |
 | wallet_type        | int    | [链类型](/common/enum.md#wallettype) |
+| id                 | string | token id                             |
 | name               | string | 名称                                 |
 | symbol             | string | 符号                                 |
 | icon               | string | 图标                                 |
@@ -104,3 +105,11 @@
 | address | string   | 钱包地址               |
 | matched | bool     | 是否匹配               |
 | chains  | []string | 符合地址规范的链名数组 |
+
+## AuthInfo
+
+> 验证信息
+
+| 字段名       | 类型   | 说明     |
+| ------------ | ------ | -------- |
+| access_token | string | 访问令牌 |
