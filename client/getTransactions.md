@@ -3,7 +3,7 @@
 ### 功能介绍
 
 :::info 说明
-查询历史交易记录列表，查询时间格式unixtime
+查询历史交易记录列表，查询时间格式 unixtime
 :::
 
 ### 函数原型
@@ -26,9 +26,8 @@ func GetTransactions(callback openpay_callback.Base, operationID string, filter 
 | 参数名称         | 参数类型 | 是否必填 | 说明                                | 描述                      |
 | ---------------- | -------- | -------- | ----------------------------------- | ------------------------- |
 | wallet_type      | int      | 是       | [链类型](/common/enum.md#chaintype) |                           |
-| query_type       | string   | 否       | 查询类型                            | all:全部 in:转入 out:转出 |
-| from_address     | string   | 是       | 交易发起人                          |                           |
-| to_address       | string   | 否       | 交易接收人                          |                           |
+| query_type       | string   | 是       | 查询类型                            | all:全部 in:转入 out:转出 |
+| address          | string   | 是       | 钱包地址                            |                           |
 | contract_address | string   | 否       | 代币合约地址                        |                           |
 | start_time       | int      | 否       | 交易开始时间                        |                           |
 | end_time         | int      | 否       | 交易结束时间                        |                           |
