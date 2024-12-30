@@ -48,6 +48,7 @@
 | decimals           | int    | 精度                                 |
 | balance            | string | 余额                                 |
 | is_multiple_chain  | bool   | 是否是多链代币                       |
+| usdt_price         | string | 代币usdt换算价格                     |
 | usdt_balance       | string | USDT 余额                            |
 | percent_change_1h  | string | 1 小时涨跌幅                         |
 | percent_change_24h | string | 24 小时涨跌幅                        |
