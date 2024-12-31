@@ -61,8 +61,8 @@
 | ------------ | ------ | -------- | ------------------------------------ |
 | from_address | string | 是       | 发送钱包地址                         |
 | to_address   | string | 是       | 接收钱包地址                         |
-| gas          | string | 否       | Gas 数量                             |
-| gas_limit    | string | 否       | Gas 上限                             |
+| gas          | int    | 否       | Gas 数量                             |
+| gas_limit    | int    | 否       | Gas 上限                             |
 | amount       | string | 是       | 金额                                 |
 | wallet_type  | int    | 是       | [链类型](/common/enum.md#wallettype) |
 | token_name   | string | 是       | 代币名称                             |
