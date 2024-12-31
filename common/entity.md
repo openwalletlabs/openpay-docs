@@ -48,7 +48,7 @@
 | decimals           | int    | 精度                                 |
 | balance            | string | 余额                                 |
 | is_multiple_chain  | bool   | 是否是多链代币                       |
-| usdt_price         | string | 代币usdt换算价格                     |
+| usdt_price         | string | 代币 usdt 换算价格                   |
 | usdt_balance       | string | USDT 余额                            |
 | percent_change_1h  | string | 1 小时涨跌幅                         |
 | percent_change_24h | string | 24 小时涨跌幅                        |
@@ -94,10 +94,10 @@
 
 > GasInfo
 
-| 字段名  | 类型   | 说明   |
-| ------- | ------ | ------ |
-| gas     | string | Gas    |
-| gas_fee | string | Gas 费 |
+| 字段名  | 类型   | 说明                                                |
+| ------- | ------ | --------------------------------------------------- |
+| gas     | string | 转账预估消耗 Gas 数量                               |
+| gas_fee | string | 转账预估消耗费用，费用=消耗 gas 数 \* 实时 gas 价格 |
 
 ## AddressValidateInfo
 
