@@ -28,7 +28,7 @@ export default defineConfig({
       { text: "Guide", link: "/guide/getting-started" },
       { text: "Client SDKs", link: "/client/index" },
       { text: "Server APIs", link: "/server/index" },
-      { text: "Common", link: "/common/errCode" },
+      { text: "Common", link: "/common/entity" },
     ],
 
     sidebar: {
