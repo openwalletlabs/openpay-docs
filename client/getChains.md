@@ -20,9 +20,9 @@ func GetChains(callback openpay_callback.Base, operationID string)
 
 ### 返回结果
 
-| 名称 | 类型                                           | 描述     |
-| ---- | ---------------------------------------------- | -------- |
-| ~    | List<[ChainInfo](/common/entity.md#chaininfo)> | 链列表   |
+| 名称 | 类型                                       | 描述   |
+| ---- | ------------------------------------------ | ------ |
+| ~    | [][ChainInfo](/common/entity.md#chaininfo) | 链列表 |
 
 ### 代码示例
 

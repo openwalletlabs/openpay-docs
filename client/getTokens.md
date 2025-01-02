@@ -23,9 +23,9 @@ func GetTokens(callback openpay_callback.Base, operationID string, walletType in
 
 ### 返回结果
 
-| 名称 | 类型                                           | 描述       |
-| ---- | ---------------------------------------------- | ---------- |
-| ~    | List<[TokenInfo](/common/entity.md#tokeninfo)> | token 列表 |
+| 名称 | 类型                                       | 描述       |
+| ---- | ------------------------------------------ | ---------- |
+| ~    | [][TokenInfo](/common/entity.md#tokeninfo) | token 列表 |
 
 ### 代码示例
 

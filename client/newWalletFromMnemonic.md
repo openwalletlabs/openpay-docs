@@ -21,9 +21,9 @@ func NewWalletFromMnemonic(callback openpay_callback.Base, operationID string, m
 
 ### 返回结果
 
-| 名称 | 类型                                       | 描述     |
-| ---- | ------------------------------------------ | -------- |
-| ~    | List<[KeyInfo](/common/entity.md#keyinfo)> | Key数组  |
+| 名称 | 类型                                   | 描述     |
+| ---- | -------------------------------------- | -------- |
+| ~    | [][KeyInfo](/common/entity.md#keyinfo) | Key 数组 |
 
 ### 代码示例
 
