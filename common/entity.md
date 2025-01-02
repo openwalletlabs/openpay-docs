@@ -46,8 +46,10 @@
 | symbol             | string | 符号                                 |
 | icon               | string | 图标                                 |
 | decimals           | int    | 精度                                 |
+| contract_address   | string | token 合约地址                       |
 | balance            | string | 余额                                 |
 | is_multiple_chain  | bool   | 是否是多链代币                       |
+| is_native_token    | bool   | 是否是原生代币                       |
 | usdt_price         | string | 代币 usdt 换算价格                   |
 | usdt_balance       | string | USDT 余额                            |
 | percent_change_1h  | string | 1 小时涨跌幅                         |
