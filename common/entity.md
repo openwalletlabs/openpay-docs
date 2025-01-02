@@ -90,7 +90,7 @@
 | contract_address    | string   | 合约地址                               |
 | wallet_type         | int      | [链类型](/common/enum.md#wallettype)   |
 | transaction_type    | int      | 交易类型 1:转入 2:转出                 |
-| create_time         | int      | 交易时间                               |
+| block_timestamp     | int      | 交易时间(unixtime)                     |
 
 ## GasInfo
 
