@@ -48,7 +48,7 @@ export default defineConfig({
       message:
         'Released under the <a href="https://github.com/vuejs/vitepress/blob/main/LICENSE">MIT License</a>.',
       copyright:
-        'Copyright © 2024-present <a href="https://github.com/">0xryan</a>',
+        'Copyright © 2025-present <a href="https://github.com/">0xryan</a>',
     },
   },
 });
@@ -156,7 +156,13 @@ function sidebarServer(): DefaultTheme.SidebarItem[] {
     {
       text: "REST API",
       collapsed: false,
-      items: [{ text: "getFriends", link: "getFriends" }],
+      items: [
+        { text: "getChains", link: "getChains" },
+        { text: "getNodes", link: "getNodes" },
+        { text: "getTokens", link: "getTokens" },
+        { text: "getTransactions", link: "getTransactions" },
+        { text: "getTransactionReceipt", link: "getTransactionReceipt" },
+      ],
     },
   ];
 }
