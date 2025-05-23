@@ -88,7 +88,6 @@ function sidebarClient(): DefaultTheme.SidebarItem[] {
         { text: "closeSDK", link: "closeSDK" },
         { text: "generateMnemonic", link: "generateMnemonic" },
         { text: "newWalletFromMnemonic", link: "newWalletFromMnemonic" },
-        { text: "signin", link: "signin" },
         { text: "transfer", link: "transfer" },
         {
           text: "getTransactionReceipt",
@@ -102,6 +101,8 @@ function sidebarClient(): DefaultTheme.SidebarItem[] {
           text: "getEstimatedGas",
           link: "getEstimatedGas",
         },
+        { text: "mintNFT", link: "mintNFT" },
+        { text: "getNFTs", link: "getNFTs" },
       ],
     },
     {
@@ -162,6 +163,7 @@ function sidebarServer(): DefaultTheme.SidebarItem[] {
         { text: "getTokens", link: "getTokens" },
         { text: "getTransactions", link: "getTransactions" },
         { text: "getTransactionReceipt", link: "getTransactionReceipt" },
+        { text: "getNFTs", link: "getNFTs" },
       ],
     },
   ];

@@ -19,3 +19,4 @@ outline: deep
 | [getTokens](/server/getTokens.md)                         | 获取代币列表         |
 | [getTransactions](/server/getTransactions.md)             | 获取历史交易记录列表 |
 | [getTransactionReceipt](/server/getTransactionReceipt.md) | 获取指定交易详情     |
+| [getNFTs](/server/getNFTs.md)                             | 获取 nft 列表        |
