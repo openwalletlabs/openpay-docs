@@ -31,14 +31,10 @@
 {
   "category": "string",
   "block_number": "string",
-  "block_hash": "string",
   "transaction_hash": "string",
-  "transaction_index": "string",
   "from_address": "string",
   "to_address": "string",
   "amount": "string",
-  "gas_used": 0,
-  "gas_price": "string",
   "status": 0,
   "token_name": "string",
   "contract_address": "string",
@@ -54,14 +50,10 @@
 | :---------------- | :----- | :-------------- |
 | category          | string | 代币类型        |
 | block_number      | string | 区块高度        |
-| block_hash        | string | 区块 hash       |
 | transaction_hash  | string | 交易 hash       |
-| transaction_index | string | 交易索引        |
 | from_address      | string | 发起人地址      |
 | to_address        | string | 接收人地址      |
 | amount            | string | 金额            |
-| gas_used          | int    | gas 使用量      |
-| gas_price         | string | gas 价格        |
 | status            | int    | 交易状态        |
 | token_name        | string | 代币名称        |
 | contract_address  | string | 代币合约地址    |

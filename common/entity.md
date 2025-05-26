@@ -18,7 +18,7 @@
 
 | 字段名      | 类型   | 说明                                 |
 | ----------- | ------ | ------------------------------------ |
-| wallet_type | int    | [链类型](/common/enum.md#wallettype) |
+| chain_type | int    | [链类型](/common/enum.md#chainType) |
 | address     | string | 地址                                 |
 | mnemonic    | string | 助记词                               |
 | private_key | string | hex 编码私钥                         |
@@ -30,7 +30,7 @@
 | 字段名       | 类型   | 说明                                 |
 | ------------ | ------ | ------------------------------------ |
 | name         | string | 链名称                               |
-| wallet_type  | int    | [链类型](/common/enum.md#wallettype) |
+| chain_type  | int    | [链类型](/common/enum.md#chainType) |
 | icon         | string | icon                                 |
 | total_assets | string | 总资产                               |
 
@@ -40,7 +40,7 @@
 
 | 字段名             | 类型   | 说明                                 |
 | ------------------ | ------ | ------------------------------------ |
-| wallet_type        | int    | [链类型](/common/enum.md#wallettype) |
+| chain_type        | int    | [链类型](/common/enum.md#chainType) |
 | token_id           | string | token id                             |
 | name               | string | 名称                                 |
 | symbol             | string | 符号                                 |
@@ -66,7 +66,7 @@
 | gas          | string | 否       | Gas 数量                                                        |
 | gas_limit    | string | 否       | Gas 上限，用于转账时加速交易确认，该值比 gas 越大，交易确认越快 |
 | amount       | string | 是       | 金额                                                            |
-| wallet_type  | int    | 是       | [链类型](/common/enum.md#wallettype)                            |
+| chain_type  | int    | 是       | [链类型](/common/enum.md#chainType)                            |
 | token_name   | string | 是       | 代币名称                                                        |
 
 ## TransactionInfo
@@ -88,7 +88,7 @@
 | status              | int      | 状态 -1:转账中, 0:转账失败, 1:转账成功 |
 | token_name          | string   | 代币名称                               |
 | contract_address    | string   | 合约地址                               |
-| wallet_type         | int      | [链类型](/common/enum.md#wallettype)   |
+| chain_type         | int      | [链类型](/common/enum.md#chainType)   |
 | transaction_type    | int      | 交易类型 1:转入 2:转出                 |
 | block_timestamp     | int      | 交易时间(unixtime)                     |
 

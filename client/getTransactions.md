@@ -25,7 +25,7 @@ func GetTransactions(callback openpay_callback.Base, operationID string, filter 
 
 | 参数名称         | 参数类型 | 是否必填 | 说明                                | 描述                                                                                    |
 | ---------------- | -------- | -------- | ----------------------------------- | --------------------------------------------------------------------------------------- |
-| wallet_type      | int      | 是       | [链类型](/common/enum.md#chaintype) |                                                                                         |
+| chain_type      | int      | 是       | [链类型](/common/enum.md#chaintype) |                                                                                         |
 | query_type       | string   | 是       | 查询类型                            | in:转入 out:转出                                                                        |
 | category         | string   | 否       | 查询代币类型                        | native: 原生代币 token_20: erc20 代币, token_721: nft721 代币, token_1155: nft1155 代币 |
 | address          | string   | 是       | 钱包地址                            |                                                                                         |

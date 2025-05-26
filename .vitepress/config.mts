@@ -166,6 +166,10 @@ function sidebarServer(): DefaultTheme.SidebarItem[] {
         { text: "getNFTs", link: "getNFTs" },
       ],
     },
+    {
+      text: "websocket",
+      link: "websocket",
+    },
   ];
 }
 

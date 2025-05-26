@@ -25,7 +25,7 @@ func GetTokenBalance(callback openpay_callback.Base, operationID string, tokenIn
 
 | 参数名称    | 参数类型 | 是否必填 | 说明                                | 描述 |
 | ----------- | -------- | -------- | ----------------------------------- | ---- |
-| wallet_type | int      | 是       | [链类型](/common/enum.md#chaintype) |      |
+| chain_type | int      | 是       | [链类型](/common/enum.md#chaintype) |      |
 | token_name  | string   | 否       | 代币名称                            |      |
 | address     | string   | 是       | 地址                                |      |
 

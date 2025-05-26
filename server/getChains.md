@@ -37,9 +37,9 @@
 
 ### 成功返回示例的参数说明
 
-| 参数名     | 类型   | 说明           |
-| :--------- | :----- | :------------- |
-| chain_type | int    | 链类型         |
-| chain_id   | string | 链 id          |
-| chain_name | string | 链名称         |
-| chain_icon | string | 链图标在线地址 |
+| 参数名     | 类型   | 说明       |
+| :--------- | :----- | :--------- |
+| chain_type | int    | 链类型     |
+| chain_id   | string | 链 id      |
+| chain_name | string | 链名称     |
+| chain_icon | string | 链图标 URL |

@@ -23,7 +23,7 @@ func GetTransactionReceipt(callback openpay_callback.Base, operationID string, r
 
 | 参数名称   | 参数类型 | 是否必填 | 说明                                | 描述 |
 | ---------- | -------- | -------- | ----------------------------------- | ---- |
-| wallet_type| int      | 是       | [链类型](/common/enum.md#chiantype) |
+| chain_type| int      | 是       | [链类型](/common/enum.md#chiantype) |
 | hash       | string   | 是       | 交易 hash                           |
 
 

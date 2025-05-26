@@ -25,7 +25,7 @@ func GetNFTs(callback openpay_callback.Base, operationID string, filter NFTFilte
 
 | 参数名称         | 参数类型 | 是否必填 | 说明                                | 描述 |
 | ---------------- | -------- | -------- | ----------------------------------- | ---- |
-| wallet_type      | int      | 是       | [链类型](/common/enum.md#chaintype) |      |
+| chain_type      | int      | 是       | [链类型](/common/enum.md#chaintype) |      |
 | address          | string   | 是       | 钱包地址                            |      |
 | contract_address | string   | 否       | nft 合约地址                        |      |
 | page             | int      | 是       | 当前页码                            |      |

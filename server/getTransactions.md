@@ -21,16 +21,16 @@
 
 ### 请求参数
 
-| 字段名           | 选填 | 类型   | 说明                                            |
-| :--------------- | :--- | :----- | ----------------------------------------------- |
-| chain_type       | 必填 | int    | 链类型                                          |
-| category         | 必填 | string | 代币类型 （"erc20", "token_721", "token_1155"） |
-| from_address     | 必填 | string | 发起人地址                                      |
-| to_address       | 选填 | string | 接收人地址                                      |
-| contract_address | 选填 | string | 合约地址                                        |
-| page             | 选填 | string | 当前页码                                        |
-| limit            | 必填 | string | 每页行数                                        |
-| page_key         | 选填 | string | alchemy 分页参数                                |
+| 字段名           | 选填 | 类型   | 说明                                      |
+| :--------------- | :--- | :----- | ----------------------------------------- |
+| chain_type       | 必填 | int    | 链类型                                    |
+| category         | 必填 | string | 代币类型 （"erc20", "erc721", "erc1155"） |
+| from_address     | 必填 | string | 发起人地址                                |
+| to_address       | 选填 | string | 接收人地址                                |
+| contract_address | 选填 | string | 合约地址                                  |
+| page             | 选填 | string | 当前页码                                  |
+| limit            | 必填 | string | 每页行数                                  |
+| page_key         | 选填 | string | alchemy 分页参数                          |
 
 ### 成功返回示例
 
@@ -39,14 +39,10 @@
   {
     "category": "string",
     "block_number": "string",
-    "block_hash": "string",
     "transaction_hash": "string",
-    "transaction_index": "string",
     "from_address": "string",
     "to_address": "string",
     "amount": "string",
-    "gas_used": 0,
-    "gas_price": "string",
     "status": 0,
     "token_name": "string",
     "contract_address": "string",
@@ -63,14 +59,10 @@
 | :---------------- | :----- | :---------------------------------------------- |
 | category          | string | 代币类型 （"erc20", "token_721", "token_1155"） |
 | block_number      | string | 区块高度                                        |
-| block_hash        | string | 区块 hash                                       |
 | transaction_hash  | string | 交易 hash                                       |
-| transaction_index | string | 交易索引                                        |
 | from_address      | string | 发起人地址                                      |
 | to_address        | string | 接收人地址                                      |
 | amount            | string | 金额                                            |
-| gas_used          | int    | gas 使用量                                      |
-| gas_price         | string | gas 价格                                        |
 | status            | int    | 交易状态                                        |
 | token_name        | string | 代币名称                                        |
 | contract_address  | string | 代币合约地址                                    |

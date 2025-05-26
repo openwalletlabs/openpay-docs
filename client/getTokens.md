@@ -11,7 +11,7 @@
 ### 函数原型
 
 ```go showLineNumbers
-func GetTokens(callback openpay_callback.Base, operationID string, walletType int)
+func GetTokens(callback openpay_callback.Base, operationID string, chainType int)
 ```
 
 ### 输入参数
@@ -19,7 +19,7 @@ func GetTokens(callback openpay_callback.Base, operationID string, walletType in
 | 参数名称    | 参数类型 | 是否必填 | 描述                                |
 | ----------- | -------- | -------- | ----------------------------------- |
 | operationID | string   | 是       | 请求 UUID                           |
-| walletType  | int      | 是       | [链类型](/common/enum.md#chaintype) |
+| chain_type  | int      | 是       | [链类型](/common/enum.md#chaintype) |
 
 ### 返回结果
 
