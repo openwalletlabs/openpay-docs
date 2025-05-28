@@ -1,15 +1,15 @@
-## 获取交易执行所需 Gas
+## 获取交易执行所需费用
 
 ### 功能介绍
 
 :::info 说明
-根据交易数据获取不同速率的 gas 集合, 用于转账前 gas 费率确认
+根据交易数据获取不同速率的 费率 集合, 用于转账前费率确认
 :::
 
 ### 函数原型
 
 ```go showLineNumbers
-func GetEstimatedGas(callback openpay_callback.Base, operationID string, transferInfo string)
+func GetEstimatedFee(callback openpay_callback.Base, operationID string, transferInfo string)
 ```
 
 ### 输入参数
@@ -23,10 +23,10 @@ func GetEstimatedGas(callback openpay_callback.Base, operationID string, transfe
 
 | 名称 | 类型                                 | 描述     |
 | ---- | ------------------------------------ | -------- |
-| ~    | [GasInfo](/common/entity.md#gasinfo) | gas 信息 |
+| ~    | [FeeInfo](/common/entity.md#feeinfo) | fee 信息 |
 
 ### 代码示例
 
 ```go showLineNumbers
- SDK.GetEstimatedGas(ParamsUtil.buildOperationID(), "")
+ SDK.GetEstimatedFee(ParamsUtil.buildOperationID(), "")
 ```

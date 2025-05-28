@@ -98,8 +98,8 @@ function sidebarClient(): DefaultTheme.SidebarItem[] {
         { text: "getTokens", link: "getTokens" },
         { text: "getTokenBalance", link: "getTokenBalance" },
         {
-          text: "getEstimatedGas",
-          link: "getEstimatedGas",
+          text: "getEstimatedFee",
+          link: "getEstimatedFee",
         },
         { text: "mintNFT", link: "mintNFT" },
         { text: "getNFTs", link: "getNFTs" },

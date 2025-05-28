@@ -25,15 +25,15 @@ func MintNFT(callback openpay_callback.Base, operationID string, mintNFTInput *i
 
 | 参数名称         | 参数类型 | 是否必填 | 说明                                | 描述 |
 | ---------------- | -------- | -------- | ----------------------------------- | ---- |
-| chain_type      | int      | 是       | [链类型](/common/enum.md#chaintype) |      |
+| chain_type       | int      | 是       | [链类型](/common/enum.md#chaintype) |      |
 | contract_address | string   | 是       | nft 合约地址                        |      |
 | metadata_url     | string   | 是       | nft metadata 地址, ipfs/https       |      |
 
 ### 返回结果
 
-| 名称 | 类型                                   | 描述     |
-| ---- | -------------------------------------- | -------- |
-| ~    | [NFTInfo](/common/entity.md#tokeninfo) | nft 信息 |
+| 名称 | 类型                                 | 描述     |
+| ---- | ------------------------------------ | -------- |
+| ~    | [NFTInfo](/common/entity.md#nftinfo) | nft 信息 |
 
 ### 代码示例
 
