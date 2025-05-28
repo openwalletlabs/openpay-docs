@@ -24,7 +24,7 @@ outline: deep
 | [getChains](/client/getChains.md)                         | 获取区块链列表    |
 | [getTokens](/client/getTokens.md)                         | 获取 token 列表   |
 | [getTokenBalance](/client/getTokenBalance.md)             | 获取 token 余额   |
-| [getEstimatedGas](/client/getEstimatedGas.md)             | 预估 gas          |
+| [getEstimatedFee](/client/getEstimatedFee.md)             | 预估转账费用      |
 | [mintNFT](/client/mintNFT.md)                             | 创建 nft          |
 | [getNFTs](/client/getNFTs.md)                             | 获取 nft 列表     |
 | [setTokenListener](/client/listener/setTokenListener.md)  | 设置 token 监听器 |
