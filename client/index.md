@@ -27,4 +27,5 @@ outline: deep
 | [getEstimatedFee](/client/getEstimatedFee.md)             | 预估转账费用      |
 | [mintNFT](/client/mintNFT.md)                             | 创建 nft          |
 | [getNFTs](/client/getNFTs.md)                             | 获取 nft 列表     |
+| [depositToTokenVault](/client/depositToTokenVault.md)     | 余额宝存款        |
 | [setTokenListener](/client/listener/setTokenListener.md)  | 设置 token 监听器 |

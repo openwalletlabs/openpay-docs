@@ -24,7 +24,7 @@ InitConfig initConfig=new InitConfig(
             initConfig,//InitConfig
             new OnConnListener() {
                 @Override
-                public void onConnectFailed(long code, String error) {
+                public void onConnectFailed(int code, String error) {
                     //连接服务器失败
                 }
 

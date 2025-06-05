@@ -103,6 +103,7 @@ function sidebarClient(): DefaultTheme.SidebarItem[] {
         },
         { text: "mintNFT", link: "mintNFT" },
         { text: "getNFTs", link: "getNFTs" },
+        { text: "depositToTokenVault", link: "depositToTokenVault" },
       ],
     },
     {
