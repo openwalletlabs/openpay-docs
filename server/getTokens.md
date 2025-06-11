@@ -29,6 +29,7 @@
 ```json
 [
   {
+    "id": "1",
     "chain_type": 8,
     "chain_id": "56",
     "token_name": "BNB",
@@ -40,6 +41,7 @@
     "is_multiple_chain": false
   },
   {
+    "id": "2",
     "chain_type": 1,
     "chain_id": "1",
     "token_name": "Ethereum",
@@ -57,6 +59,7 @@
 
 | 字段名            | 类型    | 说明                             |
 | :---------------- | :------ | :------------------------------- |
+| id                | string  | token id                         |
 | chain_type        | int     | 链类型                           |
 | chain_id          | string  | 链 id                            |
 | token_name        | string  | 代币名称                         |
