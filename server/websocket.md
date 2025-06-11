@@ -75,16 +75,16 @@ WebSocket 服务提供加密货币与 USDT 的实时价格推送功能。服务�
 {
   "reqIdentifier": 2001,
   "data": {
+    "id": "2",
     "chain_type": 1,
-    "token_id": "ethereum",
-    "name": "Ethereum",
-    "symbol": "ETH",
-    "icon": "https://example.com/eth.png",
-    "decimals": 18,
-    "contract_address": "0x...",
-    "balance": "1.5",
+    "chain_id": "1",
+    "token_name": "Ethereum",
+    "token_symbol": "ETH",
+    "token_icon": "",
+    "token_decimals": 18,
+    "contract_address": "",
+    "is_native": true,
     "is_multiple_chain": false,
-    "is_native_token": true,
     "usdt_price": "2000.50",
     "usdt_balance": "3000.75",
     "percent_change_1h": "2.5",
@@ -96,22 +96,22 @@ WebSocket 服务提供加密货币与 USDT 的实时价格推送功能。服务�
 
 推送数据字段说明：
 
-| 字段名             | 类型   | 说明                  |
-| ------------------ | ------ | --------------------- |
-| chain_type        | int    | 链类型                |
-| token_id           | string | 代币唯一标识          |
-| name               | string | 代币名称              |
-| symbol             | string | 代币符号              |
-| icon               | string | 代币图标 URL          |
-| decimals           | int    | 代币精度              |
-| contract_address   | string | 代币合约地址          |
-| balance            | string | 当前余额              |
-| is_multiple_chain  | bool   | 是否支持多链          |
-| is_native_token    | bool   | 是否为原生代币        |
-| usdt_price         | string | 当前 USDT 价格        |
-| usdt_balance       | string | USDT 等值余额         |
-| percent_change_1h  | string | 1 小时价格变化百分比  |
-| percent_change_24h | string | 24 小时价格变化百分比 |
+| 字段名             | 类型    | 说明                             |
+| ------------------ | ------- | -------------------------------- |
+| id                 | string  | token id                         |
+| chain_type         | int     | 链类型                           |
+| chain_id           | string  | 链 id                            |
+| token_name         | string  | 代币名称                         |
+| token_symbol       | string  | 代币符号                         |
+| token_icon         | string  | 代币图标 成功返回示例的参数说明  |
+| token_decimals     | int     | 代币精度                         |
+| contract_address   | string  | 代币合约地址，原生代币为空字符串 |
+| is_native          | boolean | 是否为原生代币                   |
+| is_multiple_chain  | boolean | 是否为多链代币                   |
+| usdt_price         | string  | 当前 USDT 价格                   |
+| usdt_balance       | string  | USDT 等值余额                    |
+| percent_change_1h  | string  | 1 小时价格变化百分比             |
+| percent_change_24h | string  | 24 小时价格变化百分比            |
 
 ### 请求标识符说明
 
