@@ -28,3 +28,25 @@ func SetTokenListener(listener openpay_callback.TokenListener)
 ```go showLineNumbers
  SDK.SetTokenListener(tokenListener)
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().tokenManager.setOnTokenListener(object : OnTokenListener {
+    override fun onBalanceUpdated(tokenInfo: TokenInfo?) {
+        super.onBalanceUpdated(tokenInfo)
+    }
+
+    override fun onUSDBalanceUpdated(tokenInfo: TokenInfo?) {
+        super.onUSDBalanceUpdated(tokenInfo)
+    }
+})
+```
+
+```sh [Ios]
+
+```
+
+:::
