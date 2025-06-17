@@ -30,3 +30,25 @@ func GetEstimatedFee(callback openpay_callback.Base, operationID string, transfe
 ```go showLineNumbers
  SDK.GetEstimatedFee(ParamsUtil.buildOperationID(), "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().transactionManager.getEstimatedFee(object : OnBase<FeeInfo> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: FeeInfo?) {
+        super.onSuccess(data)
+    }
+}, EstimatedFeeInput())
+```
+
+```sh [Ios]
+
+```
+
+:::

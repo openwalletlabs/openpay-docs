@@ -29,3 +29,25 @@ func GetChains(callback openpay_callback.Base, operationID string)
 ```go showLineNumbers
  SDK.GetChains(ParamsUtil.buildOperationID())
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().chainManager.getChains(object : OnBase<List<ChainInfo>> {
+    override fun onError(code: Int, error: String) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: List<ChainInfo>) {
+        super.onSuccess(data)
+    }
+},)
+```
+
+```sh [Ios]
+
+```
+
+:::

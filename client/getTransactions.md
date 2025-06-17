@@ -46,3 +46,25 @@ func GetTransactions(callback openpay_callback.Base, operationID string, filter 
 ```go showLineNumbers
  SDK.GetTransactions(ParamsUtil.buildOperationID(),  "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().transactionManager.getTransactions(object : OnBase<List<TransactionInfo>> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: List<TransactionInfo>?) {
+        super.onSuccess(data)
+    }
+}, TransactionsFilter())
+```
+
+```sh [Ios]
+
+```
+
+:::

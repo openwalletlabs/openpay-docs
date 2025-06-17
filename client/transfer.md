@@ -30,3 +30,25 @@ func Transfer(callback openpay_callback.Base, operationID string, transferInfo s
 ```go showLineNumbers
  SDK.Transfer(ParamsUtil.buildOperationID(), "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().transactionManager.transfer(object : OnBase<TransactionInfo> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: TransactionInfo?) {
+        super.onSuccess(data)
+    }
+}, TransferInfo())
+```
+
+```sh [Ios]
+
+```
+
+:::

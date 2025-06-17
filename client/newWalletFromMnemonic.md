@@ -30,3 +30,24 @@ func NewWalletFromMnemonic(callback openpay_callback.Base, operationID string, m
 ```go showLineNumbers
  SDK.NewWalletFromMnemonic(ParamsUtil.buildOperationID(), "This is monemonic phrase demo")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().keyManager.newWalletFromMnemonic(object : OnBase<List<KeyInfo>> {
+    override fun onError(code: Int, error: String) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: List<KeyInfo>) {
+        super.onSuccess(data)
+    }
+}, "mnemonic")
+```
+
+```sh [Ios]
+```
+
+:::

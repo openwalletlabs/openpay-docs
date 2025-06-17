@@ -40,3 +40,25 @@ func GetTokenBalance(callback openpay_callback.Base, operationID string, tokenIn
 ```go showLineNumbers
  SDK.GetTokenBalance(ParamsUtil.buildOperationID(), "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+ OpenPayClient.getInstance().tokenManager.getTokenBalance(object : OnBase<TokenInfo> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: TokenInfo?) {
+        super.onSuccess(data)
+    }
+}, TokenBalanceInput())
+```
+
+```sh [Ios]
+
+```
+
+:::

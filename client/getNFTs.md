@@ -42,3 +42,25 @@ func GetNFTs(callback openpay_callback.Base, operationID string, filter NFTFilte
 ```go showLineNumbers
  SDK.GetNFTs(ParamsUtil.buildOperationID(),  "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().nftManager.getNFTs(object : OnBase<List<NFTInfo>> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: List<NFTInfo>?) {
+        super.onSuccess(data)
+    }
+}, NFTFilter())
+```
+
+```sh [Ios]
+
+```
+
+:::

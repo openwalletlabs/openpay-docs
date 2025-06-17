@@ -43,3 +43,25 @@ func MintNFT(callback openpay_callback.Base, operationID string, mintNFTInput *i
 ```go showLineNumbers
  SDK.MintNFT(ParamsUtil.buildOperationID(), "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+ OpenPayClient.getInstance().nftManager.mintNFT(object : OnBase<TransactionInfo> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: TransactionInfo?) {
+        super.onSuccess(data)
+    }
+    }, MintNFTInput())
+```
+
+```sh [Ios]
+
+```
+
+:::

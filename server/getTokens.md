@@ -64,7 +64,7 @@
 | chain_id          | string  | 链 id                            |
 | token_name        | string  | 代币名称                         |
 | token_symbol      | string  | 代币符号                         |
-| token_icon        | string  | 代币图标 成功返回示例的参数说明  |
+| token_icon        | string  | 代币图标                         |
 | token_decimals    | int     | 代币精度                         |
 | contract_address  | string  | 代币合约地址，原生代币为空字符串 |
 | is_native         | boolean | 是否为原生代币                   |

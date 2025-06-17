@@ -45,3 +45,25 @@ func DepositToTokenVault(callback openpay_callback.Base, operationID string, dep
 ```go showLineNumbers
  SDK.DepositToTokenVault(ParamsUtil.buildOperationID(), "")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().vaultManager.depositToTokenVault(object : OnBase<TransactionInfo> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: TransactionInfo?) {
+        super.onSuccess(data)
+    }
+}, TokenVaultDepositInput())
+```
+
+```sh [Ios]
+
+```
+
+:::

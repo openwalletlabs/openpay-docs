@@ -32,3 +32,25 @@ func GetTokens(callback openpay_callback.Base, operationID string, chainType int
 ```go showLineNumbers
  SDK.GetTokens(ParamsUtil.buildOperationID(), 0)
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().tokenManager.getTokens(object : OnBase<List<TokenInfo>> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: List<TokenInfo>?) {
+        super.onSuccess(data)
+    }
+}, WalletType.ALL)
+```
+
+```sh [Ios]
+
+```
+
+:::

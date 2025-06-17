@@ -31,3 +31,32 @@ func InitSDK(listener openpay_callback.OnConnListener, operationID string, confi
 ```go showLineNumbers
  SDK.InitSDK(listener, ParamsUtil.buildOperationID(), "{\"api_addr\":\"https://api\",\"ws_addr\":\"wss://api\",\"platform_id\":2,\"data_dir\":\"./\",\"log_level\":5,\"is_log_standard_output\":true,\"log_file_path\":\"./\"}")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+val initConfig = InitConfig("api address", "websocket address", "./")
+initConfig.isLogStandardOutput = true
+initConfig.logLevel = 5
+
+OpenPayClient.getInstance().initSDK(this.application, initConfig, object : OnConnListener {
+    override fun onConnectFailed(code: Int, error: String) {
+        super.onConnectFailed(code, error)
+    }
+
+    override fun onConnectSuccess() {
+        super.onConnectSuccess()
+    }
+
+    override fun onConnecting() {
+        super.onConnecting()
+    }
+})
+```
+
+```sh [Ios]
+```
+
+:::

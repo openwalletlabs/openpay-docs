@@ -38,3 +38,25 @@ func GetTransactionReceipt(callback openpay_callback.Base, operationID string, r
 ```go showLineNumbers
  SDK.GetTransactionReceipt(ParamsUtil.buildOperationID(), 6, "0xdcb8e9303ecf152addbb11a789bb5d742bb8f586156cfccd55a7f956c667071c")
 ```
+
+### 客户端示例
+
+::: code-group
+
+```kotlin [Android]
+OpenPayClient.getInstance().transactionManager.getTransactionReceipt(object : OnBase<TransactionInfo> {
+    override fun onError(code: Int, error: String?) {
+        super.onError(code, error)
+    }
+
+    override fun onSuccess(data: TransactionInfo?) {
+        super.onSuccess(data)
+    }
+}, TransactionReceiptInput())
+```
+
+```sh [Ios]
+
+```
+
+:::
