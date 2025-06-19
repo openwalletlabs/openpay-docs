@@ -128,4 +128,4 @@
 | title            | string | nft 名称               |
 | description      | string | nft 描述               |
 | image_url        | string | nft 图片地址           |
-| metadata         | int    | nft metadata 原始 json |
+| metadata         | string | nft metadata 原始 json |

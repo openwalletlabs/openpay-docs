@@ -26,32 +26,42 @@
 | chain_type       | 必填 | int    | 链类型           |
 | address          | 必填 | string | 钱包地址         |
 | contract_address | 选填 | string | 合约地址         |
-| page             | 选填 | string | 当前页码         |
-| limit            | 必填 | string | 每页行数         |
+| page             | 选填 | int    | 当前页码         |
+| limit            | 必填 | int    | 每页行数         |
 | page_key         | 选填 | string | alchemy 分页参数 |
 
 ### 成功返回示例
 
 ```json
-[
-  {
-    "token_id": "string",
-    "contract_address": "string",
-    "metadata": "string",
-    "title": "string",
-    "description": "string",
-    "image_url": "string"
-  }
-]
+{
+  "page_key": "string",
+  "nfts": [
+    {
+      "token_id": "string",
+      "contract_address": "string",
+      "metadata": "string",
+      "title": "string",
+      "description": "string",
+      "image_url": "string"
+    }
+  ]
+}
 ```
 
 ### 成功返回示例的参数说明
 
+| 参数名   | 类型   | 说明             |
+| :------- | :----- | :--------------- |
+| page_key | string | alchemy 分页参数 |
+| nfts     | []NFT  | nft 数组         |
+
+### NFT
+
 | 参数名           | 类型   | 说明               |
 | :--------------- | :----- | :----------------- |
-| token_id         | string | nft tokenID        |
+| token_id         | string | tokenID            |
 | contract_address | string | 代币合约地址       |
-| metadata         | string | metadata 信息,json |
-| title            | string | nft token 标题     |
-| description      | string | nft token 描述     |
-| image_url        | string | nft image url      |
+| metadata         | string | metadata信息,json |
+| title            | string | 标题               |
+| description      | string | 描述               |
+| image_url        | string | 图片地址           |
