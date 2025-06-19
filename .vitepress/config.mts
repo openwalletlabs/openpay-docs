@@ -188,5 +188,9 @@ function sidebarCommon(): DefaultTheme.SidebarItem[] {
       text: "通用实体",
       link: "entity",
     },
+    {
+      text: "错误排查",
+      link: "problem",
+    },
   ];
 }
